@@ -1,0 +1,22 @@
+.tilt {
+  transform-style: preserve-3d;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  background:linear-gradient(-13deg, #d90281, #bab269);
+  margin: 0 auto;
+  padding: 125px;
+}
+
+img {
+  height: 250px;
+  width: auto;
+}
+
+.Tilt-inner {
+  transform: translateZ(100px);
+}
