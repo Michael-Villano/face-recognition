@@ -1,22 +1,10 @@
-.tilt {
+.Tilt {
   transform-style: preserve-3d;
-}
-
-.outer {
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  width: 500px;
-  background:linear-gradient(-13deg, #d90281, #bab269);
-  margin: 0 auto;
-  padding: 125px;
-}
-
-img {
-  height: 250px;
-  width: auto;
+  height: 150px;
+  width: 150px;
+  background-color: #ff00b9;
 }
 
 .Tilt-inner {
-  transform: translateZ(100px);
+  transform: translateZ(50px);
 }
