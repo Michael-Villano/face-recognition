@@ -1,11 +1,37 @@
 .bounding-box {
   position: absolute;
-  box-shadow: 0 0 0 3px #149df2 inset;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: center;
-  justify-content: center;
+  box-shadow: 0 0 0 4px rgba(0, 110, 200, 1) inset;
   cursor: pointer;
+  z-index: 10;
+  background-color: rgba(0,0,0,0);
+  transition-duration: 1s;
+}
+.bounding-box:hover {
+  background-color: rgba(0, 130, 187, 0.5);
+}
+
+.container {
+  margin: 30px auto;
+}
+.image-scan-space {
+  display: flex;
+  padding: 30px;
+  min-width: 100px;
+  max-width: 500px;
+}
+
+.Tilt-img {
+  transform-style: preserve-3d;
+  justify-content: center;
+  transform: translateZ(100px);
+}
+
+img {
+  min-width: 100px;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.tilt-inner {
+  transform: translateZ(50px);
 }

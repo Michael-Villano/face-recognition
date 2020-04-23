@@ -1,8 +1,9 @@
 .Tilt {
   transform-style: preserve-3d;
-  height: 150px;
-  width: 150px;
-  background-color: #ff00b9;
+  height: 125px;
+  width: 125px;
+  background-color: #fdfdfd;
+  background-image: radial-gradient(#ededed 0%, #6f6f6f 90%);
 }
 
 .Tilt-inner {

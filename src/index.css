@@ -1,8 +1,15 @@
+html {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: fixed;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: Montserat, Courier, monospace;
-  background: linear-gradient(-74deg, #ff00b9, #8d00ff) /* w3c */
+  /*background: linear-gradient(-74deg, #ff00b9, #8d00ff);*/
 }
 
 button {

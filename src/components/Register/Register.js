@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Signin/Signin.css'
 
 class Register extends Component {
   constructor(props) {
@@ -44,9 +45,8 @@ class Register extends Component {
   }
 
   render() {
-    const { onRouteChane } = this.props;
     return ( 
-    <article class="bg-near-white br2 ba shadow-5 b--black-10 mv4 w-100 w-50-m w-25-l mw8 center">
+    <article className="bg-near-white br2 ba shadow-5 b--black-10 mv4 w-100 w-50-m w-25-l mw8 center">
       <main className="pa4 black-80">
         <div className="measure center dib">
           <fieldset id="sign_up" className="ba b--transparent ph0 mh0">

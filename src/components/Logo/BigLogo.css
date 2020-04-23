@@ -1,0 +1,89 @@
+.Big-Logo-Tilt {
+  transform-style: preserve-3d;
+  height: 325px;
+  max-width: 325px;
+  min-width: 100px;
+  background-color: #fdfdfd;
+background-image: radial-gradient(#ededed 0%, #6f6f6f 90%);
+}
+.innards {
+  position: relative;
+}
+
+.Tilt-inner1 {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  transition-duration: 1s;
+}
+
+.Tilt-inner2-1 {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 3;
+  transition-duration: 1s;
+}
+.Tilt-inner2-2 {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 4;
+  transition-duration: 1s;
+}
+.Tilt-inner2-3 {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 5;
+  transition-duration: 1s;
+}
+.Tilt-inner2-4 {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 6;
+  transition-duration: 1s;
+}
+.Tilt-inner2-5 {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 7;
+  transition-duration: 1s;
+}
+
+.Tilt-inner3 {
+  top:0;
+  left:0;
+  z-index: 8;
+  transition-duration: 1s;
+}
+
+.innards:hover .Tilt-inner1 {
+  filter: blur(12px);
+}
+.innards:hover .Tilt-inner2-1 {
+  filter: invert(75%);
+  transform: translateZ(50px);
+}
+.innards:hover .Tilt-inner2-2 {
+  filter: invert(75%);
+  transform: translateZ(60px);
+}
+.innards:hover .Tilt-inner2-3 {
+  filter: invert(75%);
+  transform: translateZ(70px);
+}
+.innards:hover .Tilt-inner2-4 {
+  filter: invert(75%);
+  transform: translateZ(80px);
+}
+.innards:hover .Tilt-inner2-5 {
+  filter: invert(75%);
+  transform: translateZ(90px);
+}
+.innards:hover .Tilt-inner3 {
+  transform: translateZ(100px);
+}

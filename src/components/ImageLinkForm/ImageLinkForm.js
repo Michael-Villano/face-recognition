@@ -1,14 +1,15 @@
 import React from 'react';
 import './ImageLinkForm.css';
+import Rank from '../Rank/Rank.js';
 
-const ImageLinkForm = ({ onInputChange, onScanClick }) => {
+const ImageLinkForm = ({ name, entries, onInputChange, onScanClick }) => {
   return(
-    <div>
-      <p className='f3'>{`Upload a picture and I will use A.I. to scan and detect human faces. Give it a try!`}</p>
+    <div className='container'>
+      <Rank name={name} entries={entries}/>
       <div className='center'>
-        <div className='form pa4 br3 shadow-5'>
-          <input className='f4 pa2 br3 w-70' type='text' onChange={onInputChange}/>
-          <button className='w-30 br2 grow f4 ph3 pv2 white bg-light-purple' onClick={ onScanClick }>Scan</button>
+        <div className='form'>
+          <input className='url tc input-reset pa2 ba bg-black hover-white w-90 center' type='text' placeholder='paste image url here' onChange={onInputChange}/>
+          <button className='b--transparent ba hover-b--white hover-white ma2 pa2 center hover-bg-black bg-transparent pointer f5' onClick={ onScanClick }>scan for faces</button>
         </div>
       </div>
     </div>

@@ -1,9 +1,12 @@
 import React from 'react';
+import Logo from '../Logo/Logo.js';
+import './Navigation.css';
 
-const Navigation = ({ onRouteChange, isSignedin }) => {
+const Navigation = ({ hasImage, onRouteChange, isSignedin }) => {
   return (
-    <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
-      <p onClick={() => onRouteChange('signin')} className="f3 link dim black underline pa3 pointer">Sign Out</p>
+    <nav style={{display: 'flex', justifyContent: 'space-between'}}>
+      {hasImage ? <Logo style={{left: 0}}/> : <div></div>}
+      <p onClick={() => onRouteChange('signin')} className="f4 link dim white underline pr3  pointer">Sign Out</p>
     </nav>
   );
 }
