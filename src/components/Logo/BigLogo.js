@@ -6,7 +6,7 @@ import logo from './facial-recognition-scan.png';
 const BigLogo = () => {
   return (
       <Tilt className='center ma3 br4 Big-Logo-Tilt pa2 shadow-5' options={{reverse: false,  // reverse the tilt direction
-              max: 35,    // max tilt rotation (degrees)
+              max: 5,    // max tilt rotation (degrees)
               perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
               scale: 1.05,
               glare: true,

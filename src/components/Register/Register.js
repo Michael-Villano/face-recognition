@@ -10,9 +10,12 @@ class Register extends Component {
       registerName: ''
     }
   }
-
+ capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
   onNameChange = (event) => {
-    this.setState({registerName: event.target.value});
+    this.setState({registerName: this.capitalize(event.target.value)});
   }
 
   onEmailChange = (event) => {
@@ -52,7 +55,7 @@ class Register extends Component {
           <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
             <legend className="f2 fw6 ph0 mh0">New Account</legend>
             <div className="mt3">
-              <label className="db fw6 lh-copy f6" htmlFor="name">Name</label>
+              <label className="db fw6 lh-copy f6" htmlFor="name">First Name</label>
               <input 
               onChange={this.onNameChange}
               className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="name"  id="name"/>
